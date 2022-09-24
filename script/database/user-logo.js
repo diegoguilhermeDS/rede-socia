@@ -1,0 +1,1 @@
+let userCurrent = users[0]

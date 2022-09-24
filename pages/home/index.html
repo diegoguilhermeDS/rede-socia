@@ -5,15 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="/styles/inputs.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/forms.css" />
+    <link rel="stylesheet" href="/styles/posts.css" />
+    <link rel="stylesheet" href="/styles/modal.css" />
     <link rel="stylesheet" href="style.css" />
     <title>TechPosters - Home</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="navbar">
+      <div class="container navbar-items">
+        <h1 style="color: white;">TechPosters</h1>
+        <a class="navbar-link">Sair</a>
+      </div>
+    </header>
+    <main class="container container-principal">
+      <section class="section-make-post">
+
+      </section>
+      <aside class="bar-follow">
+        <h2>Sugestões para você seguir</h2>
+        <ul id="list-follow">
+        </ul>
+      </aside>
+      <section class="section-post">
+        
+      </section>
+    </main>
   </body>
   <script src="/script/database/users.js"></script>
   <script src="/script/database/posts.js"></script>
   <script src="/script/database/sugestUsers.js"></script>
+  <script src="/script/database/user-logo.js"></script>
   <script src="index.js"></script>
 </html>

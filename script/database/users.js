@@ -37,7 +37,7 @@ const users = [
   },
   {
     id: 7,
-    user: "Samuel Persuhn",
+    user: "Larissa Camargo",
     img: "../../assets/img/user6.svg",
   },
 ];

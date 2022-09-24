@@ -1,0 +1,51 @@
+.modal-post {
+    background-color: var(--color-grey-opacity-1);
+    background-size: cover;
+    width: 100vw;
+    height: 500vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.card-modal-post {
+    background-color: var(--color-white-fixed);
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-3);
+    width: 700px;
+    min-height: 320px;
+    height: 660px;
+    max-height: 540px;
+    border-radius: var(--radius-1);
+    padding-bottom: 20px;
+    overflow-y: auto;
+    animation: modalAnimation 2s ease;
+    position: relative;
+}
+
+.card-modal-post::-webkit-scrollbar {
+    overflow: hidden;
+}
+
+.content-post {
+    display: flex;
+    flex-direction: column;
+    gap:var(--gap-4);
+}
+
+@keyframes modalAnimation {
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

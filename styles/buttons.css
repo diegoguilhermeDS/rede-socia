@@ -1,0 +1,208 @@
+.button-primary {
+    padding: 0 12px;
+    font-size: var(--font-s-3);
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: var(--w-2);
+    height: var(--h-1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white-fixed);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: var(--radius-1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-primary:hover {
+    background-color: var(--color-second);
+}
+
+.button-grey1 {
+    padding: 0 12px;
+    font-size: var(--font-s-3);
+    font-weight: 600;
+    line-height: 1.063rem;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 6.28rem;
+    height: var(--h-1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: var(--radius-1);
+    color: var(--color-white-fixed);
+    background-color: var(--color-grey-1);
+    transition: 0.3s;
+}
+
+.button-grey1:hover {
+    background-color: var(--color-grey-0);
+}
+
+.button-white-fixed {
+    padding: 0 12px;
+    font-size: var(--font-s-3);
+    font-weight: 600;
+    line-height: 1.063rem;
+    letter-spacing: 0em;
+    text-align: left;
+    width: var(--w-3);
+    height: var(--h-1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: var(--radius-1);
+    transition: 0.3s;
+    background-color: var(--color-white-fixed);
+    color: var(--color-grey-1);
+}
+
+.button-white-fixed:hover {
+    background-color: var(--color-grey-5);
+}
+
+.button-outline-medium {
+    padding: 0 12px;
+    font-size: var(--font-s-3);
+    font-weight: 600;
+    line-height: 1.063rem;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: var(--w-2);
+    height: var(--h-2);
+    border-radius: var(--radius-1);
+    border: 1px solid var(--color-grey-1);
+    color: var(--color-grey-1);
+    background-color: var(--color-white-fixed);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-outline-medium:hover {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: #EDF2FF;
+}
+
+.button-outline-medium-active {
+    background-color: var(--color-primary);
+    color: var(--color-white-fixed);
+    border: var(--color-primary);
+    width: var(--w-1);
+}
+
+.button-outline-medium-active:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white-fixed);
+}
+
+.button-defaul {
+    padding: 0 12px;
+    font-size: var(--font-s-3);
+    font-weight: 600;
+    line-height: 1.063rem;
+    letter-spacing: 0em;
+    text-align: left;
+    width: var(--w-2);
+    height: var(--h-1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-grey-3);
+    background-color: var(--color-grey-4);
+    border: 1px solid var(--color-grey-4);
+    border-radius: var(--radius-1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-close {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-grey-5);
+    color: var(--color-grey-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito";
+    font-size: var(--font-s-3);
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin-right: 10px;
+}
+
+.button-close:hover {
+    background-color: var(--color-grey-3);
+    color: var(--color-grey-5);
+}
+
+.button-img-like {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-img-like > img {
+    width: 2.2rem;
+    filter: grayscale(1) brightness(1.5);
+}
+
+.button-img-like > img:hover {
+    filter: grayscale(1);
+}
+
+.button-img-like > span {
+    color: var(--color-grey-1);
+    font-size: var(--font-s-3);
+}
+
+
+
+@media (min-width: 541px) {
+    .button-close {
+        margin-right: 10px;
+        font-size: var(--font-s-2);
+    }
+}
+
+@media (min-width: 1000px) {
+    .button-close {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: var(--font-s-2);
+        margin-right: 20px;
+    }
+}

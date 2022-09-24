@@ -1,16 +1,27 @@
 .navbar{
     background-color: var(--color-grey-1);
-    padding: 1.75rem 0;
+    display: flex;
+    align-items: center;
+    height: 76px;
+    margin-bottom: 28px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
 }
 
 .navbar-items{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
 }
 
 .navbar-links{
     display: flex;
-    gap: 1rem;
+    gap: var(--gap-4);
 }
 
 .navbar-link{
@@ -20,11 +31,14 @@
     padding: 0.5rem;
     border-radius: var(--radius-1);
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: var(--font-s-2);
     font-weight: 400;
     cursor: pointer;
+    position: absolute;
+    right: 20px;
 }
 
 .navbar-link:hover, .navbar-link.actived{
     background-color: var(--color-grey-2);
 }
+
